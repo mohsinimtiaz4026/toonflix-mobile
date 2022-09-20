@@ -3,7 +3,6 @@ import 'package:toonflix_app/Screens/cartoon_tab_screen/cartoon_tab_screen.dart'
 import 'package:toonflix_app/Screens/home_tab_screen/home_screen.dart';
 import 'package:toonflix_app/Screens/kids_tab_screen/kids_tab_screen.dart';
 import 'package:toonflix_app/Screens/movie_tab_screen/movie_tab_screen.dart';
-import 'package:toonflix_app/Screens/search_screen_tab.dart';
 
 class HomeScreenTab extends StatefulWidget {
   const HomeScreenTab({Key? key}) : super(key: key);
@@ -42,17 +41,9 @@ class _HomeScreenTabState extends State<HomeScreenTab> {
               ),
             ),
             actions: [
-              IconButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (_) => const SearchScreenTab()));
-                },
-                icon: const Icon(
-                  Icons.search,
-                  color: Colors.black,
-                ),
+              Switch(
+                value: false,
+                onChanged: (newVal) {},
               ),
             ],
             automaticallyImplyLeading: false,

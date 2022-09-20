@@ -60,8 +60,12 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                     validator: (value) {
                       if (value!.isEmpty) {
                         return "Email Address can't be empty";
-                      } else {
+                      } else if (RegExp(
+                              "^[a-z0-9]{3,}@[a-z]{4,5}[.]{1}[a-z]{3}")
+                          .hasMatch(value)) {
                         return null;
+                      } else {
+                        return "Email is not correct";
                       }
                     },
                   ),
