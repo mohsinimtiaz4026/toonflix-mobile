@@ -30,6 +30,9 @@ class MyApp extends StatelessWidget {
               titleMedium: TextStyle(
                 color: Colors.black,
               ),
+              bodySmall: TextStyle(
+                color: Colors.black,
+              ),
             ),
           ),
           darkTheme: ThemeData(
@@ -40,9 +43,15 @@ class MyApp extends StatelessWidget {
               titleMedium: TextStyle(
                 color: Colors.white,
               ),
-            ),
-            iconTheme: const IconThemeData(
-              color: Colors.white,
+              bodySmall: TextStyle(
+                color: Colors.black,
+              ),
+              bodyMedium: TextStyle(
+                color: Colors.black,
+              ),
+              bodyLarge: TextStyle(
+                color: Colors.black,
+              ),
             ),
             dialogTheme: const DialogTheme(
               backgroundColor: Color(0xFF515252),
